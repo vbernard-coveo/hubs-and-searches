@@ -1,0 +1,1 @@
+This repo is a collection of HTML pages user to test complex origin 1 and 2 setups for commerce and complex websites.
