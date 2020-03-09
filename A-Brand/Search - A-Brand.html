@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>A-Brand - Search</title>
+  <meta name="description" content="A-Brand">
+  <meta name="author" content="Coveo">
+  <link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.8521/css/CoveoFullSearch.min.css" />
+  <link rel="stylesheet" href="../style/style.css" />
+  <script class="coveo-script"
+    src="https://static.cloud.coveo.com/searchui/v2.8521/js/CoveoJsSearch.Lazy.min.js"></script>
+  <script src="https://static.cloud.coveo.com/searchui/v2.8521/js/templates/templates.js"></script>
+  <script src="https://static.cloud.coveo.com/searchui/v2.8521/js/cultures/en.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      Coveo.SearchEndpoint.configureCloudV2Endpoint(
+        "hubsandsearchessolardfa2biorg",
+        "xx962aff18-bc75-4271-a896-e49aa77c9d5c"
+      );
+      Coveo.init(document.getElementById("search"));
+    })
+  </script>
+</head>
+
+<body id="search" class='CoveoSearchInterface' data-enable-history="true">
+  <h1>A-Brand - SEARCH PAGE</h1>
+  <a href="./Listing - 1 - A-Brand.html">Old Emojis</a>
+  <a href="./Listing - 2 - A-Brand.html">New Emojis</a>
+  <div>
+    <div class="CoveoFolding"></div>
+    <div class="CoveoAnalytics" data-search-hub="Search - A-Brand"></div>
+    <div class="coveo-search-section">
+      <div class="CoveoSearchbox" data-enable-omnibox="true"></div>
+    </div>
+    <div class="coveo-main-section">
+      <div class="coveo-facet-column">
+        <div class="CoveoDynamicFacet" data-title="Release" data-field="@emoji_release" data-tab="All"></div>
+        <div class="CoveoDynamicFacet" data-title="Unicode" data-field="@emoji_unicode" data-tab="All"></div>
+      </div>
+      <div class="coveo-results-column">
+        <div class="CoveoShareQuery"></div>
+        <div class="CoveoPreferencesPanel">
+          <div class="CoveoResultsPreferences"></div>
+          <div class="CoveoResultsFiltersPreferences"></div>
+        </div>
+        <div class="CoveoTriggers"></div>
+        <div class="CoveoBreadcrumb"></div>
+        <div class="CoveoDidYouMean"></div>
+        <div class="coveo-results-header">
+          <div class="coveo-summary-section">
+            <span class="CoveoQuerySummary"><div class="coveo-show-if-no-results"></div></span>
+            <span class="CoveoQueryDuration"></span>
+          </div>
+          <div class="coveo-result-layout-section">
+            <span class="CoveoResultLayout"></span>
+          </div>
+          <div class="coveo-sort-section">
+            <span class="CoveoSort" data-sort-criteria="relevancy" data-caption="Relevance"></span>
+            <span class="CoveoSort" data-sort-criteria="date descending,date ascending" data-caption="Date"></span>
+          </div>
+        </div>
+        <div class="CoveoHiddenQuery"></div>
+        <div class="CoveoErrorReport" data-pop-up="false"></div>
+        <div class="CoveoResultList" data-layout="list" data-wait-animation="fade" data-auto-select-fields-to-include="true">
+          <script id="Default" class="result-template" type="text/underscore" data-layout="list">
+            <div class="coveo-result-frame">
+              <div class="coveo-result-cell" style="vertical-align:top;text-align:center;width:200px;">
+                <div class="emoji-image" style="background-image: url('{{- raw.emoji_image}}')"> </div>
+                <div class="CoveoQuickview"></div>
+              </div>
+              <div class="coveo-result-cell" style="vertical-align: top;padding-left: 16px;">
+                <div class="coveo-result-row" style="margin-top:0;">
+                  <div class="coveo-result-cell" style="vertical-align:top;font-size:16px;">
+                    <a class="CoveoResultLink"></a>
+                  </div>
+                  <div class="coveo-result-cell" style="width:120px;text-align:right;font-size:12px">
+                    <div class="coveo-result-row">
+                      <span class="CoveoFieldValue" data-field="@date" data-helper="date"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="coveo-result-row" style="margin-top:10px;">
+                  <div class="coveo-result-cell">
+                    <span class="CoveoExcerpt"></span>
+                  </div>
+                </div>
+                <div class="coveo-result-row">
+                  <div class="coveo-result-cell">
+                    <div class="CoveoMissingTerms"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </script>
+        </div>
+        <div class="CoveoPager"></div>
+        <div class="CoveoLogo"></div>
+        <div class="CoveoResultsPerPage"></div>
+      </div>
+    </div>
+  </div>
+
+</html>

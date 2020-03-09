@@ -1,0 +1,5 @@
+.emoji-image{
+    height: 200px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+  }
