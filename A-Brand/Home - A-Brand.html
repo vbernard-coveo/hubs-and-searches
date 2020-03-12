@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>A-Brand - Search</title>
+  <meta name="description" content="A-Brand">
+  <meta name="author" content="Coveo">
+  <link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.8521/css/CoveoFullSearch.min.css" />
+  <link rel="stylesheet" href="../style/style.css" />
+  <script class="coveo-script"
+    src="https://static.cloud.coveo.com/searchui/v2.8521/js/CoveoJsSearch.Lazy.min.js"></script>
+  <script src="https://static.cloud.coveo.com/searchui/v2.8521/js/templates/templates.js"></script>
+  <script src="https://static.cloud.coveo.com/searchui/v2.8521/js/cultures/en.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const searchBoxRoot = document.getElementById("searchbox");
+      Coveo.SearchEndpoint.configureCloudV2Endpoint(
+        "hubsandsearchessolardfa2biorg",
+        "xx962aff18-bc75-4271-a896-e49aa77c9d5c"
+      );
+      Coveo.initSearchbox(searchBoxRoot, "./Search - A-Brand.html");
+    })
+  </script>
+</head>
+
+<body id="search" data-enable-history="true">
+  <h1>A-Brand - HOME</h1>
+  <a href="./Listing - 1 - A-Brand.html">Old Emojis</a>
+  <a href="./Listing - 2 - A-Brand.html">New Emojis</a>
+
+  <div id="searchbox">
+    <div class="CoveoSearchbox"></div>
+  </div>
+  
+</html>
